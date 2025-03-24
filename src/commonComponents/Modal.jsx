@@ -9,18 +9,18 @@ const Modal = () => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50">
-      <div className="bg-white w-11/12 md:w-2/3 lg:w-1/2 xl:w-1/3 p-10 rounded-2xl shadow-2xl transform scale-105">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">🔥 Powerful Modal</h2>
-        <p className="text-lg text-gray-700 text-center mb-8">
-          This is a stronger, bolder, and visually appealing modal controlled by Redux.
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+      <div className="bg-white w-2/5 p-8 rounded-xl shadow-lg">
+        <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Smaller Modal</h2>
+        <p className="text-base text-gray-700 text-center mb-6">
+          This is a slightly smaller modal for a more compact look.
         </p>
         <div className="flex justify-center">
           <button
-            className="px-8 py-3 bg-red-600 text-white font-semibold rounded-lg shadow-lg hover:bg-red-700 transition-all duration-300"
+            className="px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition duration-200"
             onClick={() => dispatch(closeModal())}
           >
-            Close Modal
+            Close
           </button>
         </div>
       </div>
